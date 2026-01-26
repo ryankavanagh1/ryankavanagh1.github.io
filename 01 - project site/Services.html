@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Creggan Barbers | Services</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+    }
+
+    .navbar {
+      letter-spacing: 1px;
+    }
+
+    .page-header {
+      background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+                  url('assets/services-header.jpg') center/cover no-repeat;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-size: 3.5rem;
+      font-weight: 600;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .card {
+      background: #000;
+      border: 1px solid #222;
+    }
+
+    .card-header {
+      background: #000;
+      border-bottom: 1px solid #222;
+    }
+
+    .card-header a {
+      color: #f5f5f5;
+      display: block;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .price {
+      color: #cfa144;
+      float: right;
+    }
+
+    .card-body {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #000;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #999;
+    }
+
+    footer a:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-black py-3">
+  <a class="navbar-brand" href="Index2.html">
+    <img src="assets/logoweb.jpg" alt="Creggan Barbers" style="width:55px;">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+    <ul class="navbar-nav text-uppercase">
+      <li class="nav-item px-2"><a class="nav-link" href="Index.html">Home</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="The Team.html">The Team</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Products.html">Products</a></li>
+      <li class="nav-item px-2 active"><a class="nav-link" href="Services.html">Services</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Contacts.html">Contact</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Updates.html">Updates</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+  <div class="container">
+    <h1>OUR SERVICES</h1>
+    <p class="mt-3">QUALITY CUTS · PROFESSIONAL SERVICE · FAIR PRICES</p>
+  </div>
+</section>
+
+<!-- Accordion Services -->
+<section class="section">
+  <div class="container">
+    <div id="servicesAccordion">
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a data-toggle="collapse" href="#serviceOne">
+            Men’s Haircut <span class="price">£15</span>
+          </a>
+        </div>
+        <div id="serviceOne" class="collapse show" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Premium men’s haircut including scissor work on top, skin fade or taper,
+            optional designs and sharp finishing.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a class="collapsed" data-toggle="collapse" href="#serviceTwo">
+            Beard Trim <span class="price">£5</span>
+          </a>
+        </div>
+        <div id="serviceTwo" class="collapse" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Professional beard trim with clean line-up and optional hot towel finish.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a class="collapsed" data-toggle="collapse" href="#serviceThree">
+            Kids Haircut (Under 12) <span class="price">£12</span>
+          </a>
+        </div>
+        <div id="serviceThree" class="collapse" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Trend-led children’s haircuts with optional designs in a relaxed environment.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a class="collapsed" data-toggle="collapse" href="#serviceFour">
+            Ear & Nose Wax <span class="price">£10</span>
+          </a>
+        </div>
+        <div id="serviceFour" class="collapse" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Hygienic ear cleaning and nose waxing for improved comfort and grooming.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a class="collapsed" data-toggle="collapse" href="#serviceFive">
+            Full Grooming Package <span class="price">£30</span>
+          </a>
+        </div>
+        <div id="serviceFive" class="collapse" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Haircut, wash & dry, and beard trim combined into one complete service.
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header">
+          <a class="collapsed" data-toggle="collapse" href="#serviceSix">
+            Ultimate Full Service <span class="price">£40</span>
+          </a>
+        </div>
+        <div id="serviceSix" class="collapse" data-parent="#servicesAccordion">
+          <div class="card-body">
+            Full grooming package including haircut, wash & dry, beard trim,
+            ear cleaning and nose wax.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2025 Creggan Barbers. All Rights Reserved.</p>
+    <ul class="list-inline mb-0">
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+      <li class="list-inline-item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

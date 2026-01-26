@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Purchase Confirmation | Creggan Barbers</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #111;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  letter-spacing: 1px;
+}
+
+.container {
+  padding-top: 80px;
+  max-width: 600px;
+  text-align: center;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-custom {
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  padding: 10px 25px;
+}
+
+.btn-custom:hover {
+  background: #cfa144;
+  color: #111;
+}
+
+footer {
+  background: #000;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #999;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-black py-3">
+  <a class="navbar-brand" href="Index.html">
+    <img src="assets/logoweb.jpg" alt="Creggan Barbers" style="width:55px;">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+    <ul class="navbar-nav text-uppercase">
+      <li class="nav-item px-2"><a class="nav-link" href="Index.html">Home</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="The Team.html">The Team</a></li>
+      <li class="nav-item px-2 active"><a class="nav-link" href="Products.html">Products</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Services.html">Services</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Contacts.html">Contact</a></li>
+      <li class="nav-item px-2"><a class="nav-link" href="Updates.html">Updates</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Confirmation Content -->
+<div class="container">
+  <h1>Purchase Confirmed!</h1>
+  <p id="confirmationMessage"></p>
+  <button class="btn btn-custom" onclick="goBack()">Back to Products</button>
+</div>
+
+<!-- Footer -->
+<footer class="py-4">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2025 Creggan Barbers. All Rights Reserved.</p>
+    <ul class="list-inline mb-0">
+      <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+      <li class="list-inline-item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+// Get buyer info and product from sessionStorage
+const product = sessionStorage.getItem('productPurchased');
+const buyer = sessionStorage.getItem('buyerName');
+
+// Display confirmation message with product
+const messageEl = document.getElementById('confirmationMessage');
+if(product && buyer){
+  messageEl.innerText = `Thank you, ${buyer}! Your purchase of "${product}" has been successfully processed.`;
+} else if(buyer) {
+  messageEl.innerText = `Thank you, ${buyer}! Your purchase has been successfully processed.`;
+} else {
+  messageEl.innerText = "Thank you for your purchase!";
+}
+
+// Back to products
+function goBack() {
+  window.location.href = 'Products.html';
+}
+</script>
+
+</body>
+</html>
